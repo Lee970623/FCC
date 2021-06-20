@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">FCC Survey Form</h1>
+        <p id="description"><em>A survey form page built with HTML and CSS</em></p>
+    </header>
+
+    <form id="survey-form">
+        <section>
+            <label id="name-label" for="name">Name</label>
+            <input class="form-control" placeholder="Name" type="text" id="name" name="name" required>
+        </section>
+
+        <section>
+            <label for="email" id="email-label">Email</label>
+            <input class="form-control" placeholder="Email" type="email" name="email" id="email" required>
+        </section>
+
+        <section>
+            <label id="number-label" for="number">Age (optional)</label>
+            <input class="form-control" placeholder="Age" type="number" name="age" id="number" min="1" max="99">
+        </section>
+
+        <section>
+            <p>Which option best describes your current role?</p>
+            <select name="role" class="form-control" id="dropdown" required>
+                <option value="disable" selected disabled>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="nothing">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </section>
+
+        <section>
+            <p>Would you recommend FCC to a friend?</p>
+            <input type="radio" name="definitely" id="definitely" checked>
+            <label for="definitely">Definitely</label>
+            <br>
+            <input type="radio" name="maybe" id="maybe">
+            <label for="maybe">Maybe</label>
+            <br>
+            <input type="radio" name="unsure" id="unsure">
+            <label for="unsure">Not sure</label>
+        </section>
+
+        <section>
+            <p>What would you like to see improved? (check all that apply)</p>
+            <label for="front-end"><input type="checkbox" name="checks" id="front-end" value="front_end">Front-end
+                Projects</label>
+            <br>
+            <label for="back-end"><input type="checkbox" name="checks" id="back-end" value="back_end">Back-end
+                Projects</label>
+            <br>
+            <label for="data-visualization"><input type="checkbox" name="checks" id="data-visualization"
+                    value="data">Data Visualization</label>
+            <br>
+            <label for="challenges"><input type="checkbox" name="checks" id="challenges"
+                    value="challenge">Challenges</label>
+            <br>
+            <label for="videos"><input type="checkbox" name="checks" id="videos" value="video">Videos</label>
+            <br>
+            <label for="wiki"><input type="checkbox" name="checks" id="wiki" value="wiki">Wiki</label>
+            <br>
+        </section>
+
+        <section>
+            <p>Any comments or suggestions?</p>
+            <textarea class="input-area" placeholder="Enter your comment here..." name="comments" id="comments"
+                cols="30" rows="10"></textarea>
+        </section>
+
+        <section>
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </section>
+    </form>
+</body>
+
+</html>

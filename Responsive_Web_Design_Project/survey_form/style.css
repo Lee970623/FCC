@@ -1,0 +1,72 @@
+* {
+    margin: 0 auto;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+body {
+    background: url('wall_paper.jpg');
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#survey-form {
+    background: hsla(70, 55%, 37%, 0.5);
+    padding: 30px;
+    border-radius: 5px;
+    height: 90%;
+    width: 40%;
+}
+
+section {
+    margin: 0 auto 0.5rem auto;
+    padding: 0.45rem;
+}
+
+.input-area {
+    min-height: 120px;
+    width: 100%;
+    resize: vertical;
+    border-radius: 5px;
+    padding: 0.37rem;
+    box-sizing: border-box;
+}
+
+input, select, button, textarea {
+    margin: 0;
+    line-height: inherit;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    height: 2rem;
+    color: #2D2B47;
+    padding: 0.37rem;
+    box-sizing: border-box;
+}
+
+button.submit-button {
+    width: 100%;
+    display: block;
+    padding: 0.75rem;
+    border-radius: 5px;
+    background-color: mediumturquoise;
+    cursor: pointer;
+}

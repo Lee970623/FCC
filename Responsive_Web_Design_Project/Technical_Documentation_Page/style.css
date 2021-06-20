@@ -1,0 +1,104 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    --font-color: #696A6E;
+    --border-color: #99A2A2;
+    --code-color: #F7F7F7;
+    color: var(--font-color);
+    margin: 0 auto;
+    padding: 0;
+}
+
+html {
+    padding: 0;
+}
+
+/* #container {
+    display: grid;
+    grid-template-areas: "navbar maindoc";
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 20px;
+} */
+
+header#description h1 {
+    margin: 1.5rem;
+}
+
+#navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* grid-area: navbar; */
+    border-right: 0.25rem var(--border-color) solid;
+    height: 100%;
+    min-width: 290px;
+}
+
+#navigation-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    border-top: solid 1px var(--border-color);
+    line-height: 2.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--font-color);
+    padding-left: 1.5rem;
+}
+
+#main-doc {
+    margin-left: 18rem;
+}
+
+article {
+    padding-left: 1rem;
+}
+
+code {
+    background-color: var(--code-color);
+    display: block;
+    padding: 1.2rem;
+    font-size: 0.75rem;
+}
+
+
+/* 一定要放到最下面覆盖上面的样式 */
+@media only screen and (max-width: 816px) {
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 290px;
+    }
+
+    .main-section {
+        margin: 15px;
+    }
+
+    #navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;   
+        margin: 0;
+        padding: 0;
+        max-height: 275px;
+        z-index: 1;
+    }
+
+    #navbar h1 {
+        text-align: center;
+    }
+
+    #navigation {
+        border-top: 0.1rem var(--border-color) solid;
+        border-bottom: 0.25rem var(--border-color) solid;
+        height: 10rem;
+        overflow: scroll;
+    }
+}
