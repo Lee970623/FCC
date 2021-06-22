@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url('wall_paper.jpg');
+    background: url('wall_paper.jpg') center;
     display: flex;
     flex-direction: column;
 }
@@ -24,7 +24,7 @@ header {
 }
 
 #survey-form {
-    background: hsla(70, 55%, 37%, 0.5);
+    background: hsla(80, 55%, 37%, 0.9);
     padding: 30px;
     border-radius: 5px;
     height: 90%;
