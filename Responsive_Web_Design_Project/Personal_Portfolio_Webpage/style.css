@@ -101,15 +101,14 @@ a {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-gap: 20px;
     margin-bottom: 3rem;
+    max-width: 70rem;
 }
 
 .project {
     background-color: var(--jumbotron-color);
-    width: 20rem;
-    height: 20rem;
 }
 
 .image {
@@ -200,16 +199,4 @@ a {
     justify-content: center;
     line-height: 2rem;
     align-items: center;
-}
-
-@media screen and (max-width: 730px) {
-
-}
-
-@media screen and (min-width: 730px) and (max-width: 1090px) {
-
-}
-
-@media screen and (min-width: 1090px) {
-
 }
