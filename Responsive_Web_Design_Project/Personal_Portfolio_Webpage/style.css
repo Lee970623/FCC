@@ -18,6 +18,11 @@
     color: var(--font-color);
 }
 
+code {
+    opacity: 0;
+    color: hsl(351, 57%, 60%);
+}
+
 h1 {
     font-size: 3rem;
     text-align: center;
