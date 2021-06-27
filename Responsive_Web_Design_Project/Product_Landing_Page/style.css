@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEEEEE;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin-right: 20px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #F1C40F;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+header#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #DDDDDD;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #EEEEEE;
+}
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#email {
+    display: block;
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#submit {
+    width: 200px;
+    line-height: 1.5rem;
+}
+
+#features {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-block {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+.feature-icon {
+    position: relative
+}
+
+.feature-icon i {
+    position: absolute;
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.feature-description h3 {
+    text-align: left;
+}
+
+#how-it-work {
+    text-align: center;
+}
+
+#pricing {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-block {
+    display: flex;
+    border: 1px solid;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+    max-width: 300px;
+    margin: 10px;
+}
+
+.pricing-header {
+    background-color: #DDDDDD;
+    width: 100%;
+    text-align: center;
+}
+
+#pricing-detail {
+    text-align: center;
+}
+
+.pricing-button {
+    padding: 10px;
+    width: 100px;
+}
+
+footer {
+    background-color: #DDDDDD;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.links ul {
+    margin-bottom: 0;
+}
+
+.declaration {
+    margin: 0;
+    font-size: 0.8rem;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    header#header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav-bar {
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav-bar li {
+        display: block;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    #form {
+        margin-top: 100px;
+    }
+
+    #pricing {
+        flex-wrap: wrap;
+    }
+
+    .pricing-block {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
