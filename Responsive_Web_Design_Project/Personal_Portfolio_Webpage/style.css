@@ -19,7 +19,7 @@
 }
 
 code {
-    opacity: 0;
+    visibility: hidden;
     color: hsl(351, 57%, 60%);
 }
 
@@ -116,6 +116,14 @@ a {
     background-color: var(--jumbotron-color);
 }
 
+.project:hover .project-image {
+    transform: scale(1.2);
+}
+
+.project:hover code {
+    visibility: visible;
+}
+
 .image {
     width: 100%;
     height: 90%;
@@ -144,7 +152,6 @@ a {
     width: 6.5rem;
     line-height: 2rem;
     padding: 0px 0.75rem;
-    position: relative;
     box-sizing: border-box;
 }
 
@@ -152,15 +159,15 @@ a {
     background-color: var(--nav-color);
 }
 
-#profile-link::after {
-    content: '>';
-    position: absolute;
-    right: 1.1rem;
-    transition: all 0.5s ease-out;
+#profile-link > code {
+    color: white;
+    visibility: visible;
+    display: inline-block;
+    transition: all .5s ease-in-out;
 }
 
-#profile-link:hover::after {
-    right: 0.9rem;
+#profile-link:hover > code {
+    transform: translateX(.5rem)
 }
 /* end of projects section  */
 
